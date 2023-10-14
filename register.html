@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="padre">
+        <div class="logo d-flex justify-content-center">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <div class="d-flex justify-content-center mt-4" placeholder="usuario">
+            <input type="text" class="username" required placeholder="Ingrese su usuario">
+        </div>
+
+        <div class=" d-flex justify-content-center mt-2  ">
+            <input type="password" id="contraseña" required placeholder="ingrese su contraseña">
+        </div>
+        <div class=" row d-flex justify-content-end">
+            <p class="col-6">Forgot password?</p>
+        </div>
+
+        <div class="d-flex justify-content-center mt-2">
+            <button class="boton">Log In</button>
+        </div>
+        <h6 id="p" class="text-center text-primary mt-3"></h6>
+        <div class="facebook d-flex justify-content-center mt-4">
+            <a href="#"> <i class="fa-brands fa-square-facebook"></i> Log in with Facebook</a>
+        </div>
+
+
+        <div class="d-flex justify-content-center mt-4">
+
+
+            Or
+
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            Don’t have an account?<a href="">Sign up.</a>
+        </div>
+
+        <div  class="mt-5">
+            <hr>
+        </div>
+
+        <div class=" d-flex justify-content-center mt-2">
+
+            <a href="">Instagram от Facebook</a>
+        </div>
+        <br>
+    </div>
+
+    <script>
+    
+    const username = document.querySelector(".username");
+        const contraseña = document.querySelector("#contraseña");
+        const boton = document.querySelector(".boton");
+        const alerta = document.querySelector("#p");
+        
+        boton.addEventListener("click", function () {
+            if (username.value == "" || contraseña.value == "") {
+                p.innerHTML = "Debes llenar los campos";
+            } else {
+                alerta.innerHTML = "";
+          
+                localStorage.setItem("username", username.value);
+                localStorage.setItem("password", contraseña.value);
+                window.location.href = "index.html"; 
+            }
+        });
+        
+        </script>
+    <script src="https://kit.fontawesome.com/fa829f82c0.js" crossorigin="anonymous"></script>
+</body>
+</html>

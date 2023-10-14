@@ -1,0 +1,24 @@
+.logo{
+    margin-top: 150px;
+
+}
+ div a{
+    text-decoration: none;
+    color: rgba(55, 151, 239, 1);
+
+}
+ div input{
+    width: 280px;
+}
+div p{
+    padding-right:auto;
+    color: rgba(55, 151, 239, 1);
+}
+div .boton{
+    width: 280px;
+    border: none;
+    background-color: rgba(55, 151, 239, 1);
+}
+div .linea{
+    margin-top: 150px;
+}
